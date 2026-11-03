@@ -15,13 +15,23 @@ Seluruh eksperimen telah dieksekusi secara lengkap (*end-to-end*) dan terangkum 
 
 ---
 
-## 👤 Identitas Mahasiswa
-- **Nama:** [Isi Nama Lengkap Anda]
-- **NIM:** [Isi NIM Anda]
-- **Mata Kuliah:** Deep Learning
-- **Program Studi / Kelas:** [Isi Program Studi / Kelas]
-- **Batas Pengumpulan:** Jumat, 6 November 2026
-- **Tautan Repositori GitHub:** `https://github.com/RfqiAlan/multi-architecture-deep-learning`
+## 📚 Tautan & Sumber Dataset
+
+Eksperimen dalam repositori ini menggunakan dua dataset benchmark standar:
+
+1. **CIFAR-10 (Computer Vision):**
+   - 🌐 **Laman Resmi:** [University of Toronto - The CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
+   - 📦 **Tautan Unduhan Langsung:** [cifar-10-python.tar.gz (170 MB)](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+   - 💻 **Pemuatan via Keras:** `tf.keras.datasets.cifar10.load_data()`
+   - 📖 **Referensi:** Krizhevsky, A. (2009). *Learning Multiple Layers of Features from Tiny Images*, University of Toronto.
+   - 🏷️ **Karakteristik:** 60.000 citra berwarna 32×32 piksel dalam 10 kelas seimbang (*airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck*).
+
+2. **IMDB Movie Reviews (Natural Language Processing):**
+   - 🌐 **Laman Resmi:** [Stanford AI Lab - Large Movie Review Dataset](https://ai.stanford.edu/~amaas/data/sentiment/)
+   - 📦 **Tautan Unduhan Langsung:** [imdb.npz (Google Storage CDN ~17 MB)](https://storage.googleapis.com/tensorflow/tf-keras-datasets/imdb.npz)
+   - 💻 **Pemuatan via Keras:** `tf.keras.datasets.imdb.load_data()`
+   - 📖 **Referensi:** Maas, A. L., et al. (2011). *Learning Word Vectors for Sentiment Analysis*, ACL.
+   - 🏷️ **Karakteristik:** 50.000 ulasan film untuk klasifikasi sentimen biner (*Positif* / *Negatif*).
 
 ---
 
@@ -75,16 +85,6 @@ tugas_deep_learning/
 └── README.md                 # Dokumentasi komprehensif & laporan hasil eksperimen
 ```
 
----
-
-## 🛠️ Dataset yang Digunakan
-
-1. **CIFAR-10 (Computer Vision):**
-   - 60.000 citra berwarna 32×32 piksel dalam 10 kelas seimbang (*airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck*).
-   - Pembagian: 40.000 data latih, 10.000 data validasi, 10.000 data uji.
-2. **IMDB Movie Reviews (Natural Language Processing):**
-   - 50.000 ulasan film untuk analisis sentimen biner (*Positif* / *Negatif*).
-   - Panjang sekuens dibatasi dan diseragamkan (*padding*) menjadi 200 token dengan perbendaharaan 10.000 kata.
 
 ---
 
